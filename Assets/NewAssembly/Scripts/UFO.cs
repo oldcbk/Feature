@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Assertions;
 
 public class UFO : MonoBehaviour
 {
@@ -22,7 +21,7 @@ public class UFO : MonoBehaviour
     public string LaunchButton;
     public void Launch()
     {
-        Assert.IsFalse(m_isMoving);
+        if (m_isMoving) Back();
         m_isMoving = true;
         m_originalPosition = transform.position;
         m_rigidbody2D.velocity = LaunchDir * m_speed;
@@ -32,9 +31,9 @@ public class UFO : MonoBehaviour
     public string BackButton;
     public void Back()
     {
-        m_isMoving = false;
         m_rigidbody2D.velocity = Vector3.zero;
         transform.position = m_originalPosition;
+        m_isMoving = false;
     }
 
     private void OnDrawGizmos()

@@ -12,7 +12,7 @@ public class ButtonDrawer : PropertyDrawer
         };
         var targetObject = property.serializedObject.targetObject;
         var methodInfo = targetObject.GetType().GetMethod(btn.text);
-        btn.clicked += () => methodInfo.Invoke(targetObject, new object[0]);
+        btn.clicked += () => methodInfo.Invoke(targetObject, null);
         return btn;
     }
 }
