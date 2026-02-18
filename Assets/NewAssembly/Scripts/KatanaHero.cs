@@ -146,6 +146,7 @@ public class KatanaHero : MonoBehaviour
         List<Operation> Operations => KH.m_operations;
         Operation OperationCached => KH.m_operationBuffer.Peak();
         State ReadyState => KH.m_ready;
+        State PokeState;
 
         Timer m_move;
         Timer m_sustain;
@@ -170,7 +171,7 @@ public class KatanaHero : MonoBehaviour
             base.OnUpdate();
             if (OperationCached == Operations[0])
             {
-                SM.ChangeState(ReadyState); // TODO
+                SM.ChangeState(PokeState);
             }
         }
 
@@ -188,7 +189,7 @@ public class KatanaHero : MonoBehaviour
 
         void OnSustainTimeUp()
         {
-            SM.ChangeState(KH.m_ready);
+            SM.ChangeState(ReadyState);
         }
     }
 
