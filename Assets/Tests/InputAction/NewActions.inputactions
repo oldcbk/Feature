@@ -1,0 +1,570 @@
+{
+    "version": 1,
+    "name": "NewActions",
+    "maps": [
+        {
+            "name": "纳刀S",
+            "id": "f96860ce-807f-476e-a710-7d14e06b4811",
+            "actions": [
+                {
+                    "name": "移动",
+                    "type": "Value",
+                    "id": "84fa5c33-f48a-49c9-92d5-9ac6dd3ffb05",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "奔跑",
+                    "type": "PassThrough",
+                    "id": "8559f7b4-5f48-4e9d-bf75-efd6b16040b4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "翻滚",
+                    "type": "PassThrough",
+                    "id": "48e909ce-3f27-4178-9652-c3eed2e21e03",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "飞扑",
+                    "type": "Button",
+                    "id": "a82327e0-2a4c-4dd9-a8af-08bcf1814d19",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "拔刀",
+                    "type": "PassThrough",
+                    "id": "7eaef896-b8ad-4796-b72e-f7b3a7ccb8cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "气刃斩",
+                    "type": "PassThrough",
+                    "id": "4d59852c-a684-45bf-93f7-05b009efe397",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cc59560d-511c-4e41-860a-1b93887da660",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "奔跑",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cde13e2d-e2d1-4c21-b4b0-36d1703c7759",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "移动",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f83b32f-6be0-456d-af13-767a5c8bc9b6",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "翻滚",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "25e50043-a878-4d83-bc3e-ba5ed164877a",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "拔刀",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74c224a7-6c36-47be-b0df-5ac044230b25",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "气刃斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "One Modifier",
+                    "id": "0e947659-a76f-46f6-93d9-2dea74f3f662",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "飞扑",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "d39b0e8a-ad86-49e6-bbd4-914a797446eb",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "飞扑",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "802a8738-5e47-4e12-9f0e-3b301af9ba07",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "飞扑",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "纳刀M",
+            "id": "d94776b0-ed44-4898-a57b-ec358d33c714",
+            "actions": [
+                {
+                    "name": "移动",
+                    "type": "Value",
+                    "id": "e7a56062-5f55-487b-9da0-05d2bbf1a71b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f82624de-bc3b-4f56-b42d-b18f9adabcc7",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "Clamp(min=-0.5,max=0.5)",
+                    "groups": "",
+                    "action": "移动",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "拔刀S",
+            "id": "2246e66a-5cc2-427e-bbf9-5acb44945d1c",
+            "actions": [
+                {
+                    "name": "移动",
+                    "type": "Value",
+                    "id": "2d13ca4f-8dc0-418b-9518-64c02efbf07f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "翻滚",
+                    "type": "PassThrough",
+                    "id": "b756319e-5289-4aa7-844a-b5ee8dacacc8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "纳刀",
+                    "type": "PassThrough",
+                    "id": "7d425744-bf69-41f4-89d5-b79ba0e4d8ba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "戳",
+                    "type": "PassThrough",
+                    "id": "4250f800-2d64-47de-b356-ef21f5bedbe5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "气刃斩",
+                    "type": "PassThrough",
+                    "id": "8abeed7a-28fa-4c26-a7ee-1cefe2d3cc5f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c4e8ceb6-8b68-47b1-b99d-45d17e3c656c",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "翻滚",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "012d0b37-47e5-4613-95c2-1e733e88f3dd",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "移动",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fef91485-9db7-4275-b4f2-56c52e202227",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "纳刀",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b2a584c-88e2-4f42-8ff7-3465a815df8d",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "纳刀",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6192cf35-fb54-404a-b6c1-d93feb056665",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "气刃斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f4aff3e-2414-44a6-aa59-cf34e431c005",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "戳",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "攻击S",
+            "id": "64602ed9-990c-4d0e-af59-ce2f771e499d",
+            "actions": [
+                {
+                    "name": "方向",
+                    "type": "Value",
+                    "id": "f9513485-ac67-45ed-8ba2-4cdbbda777b2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "翻滚",
+                    "type": "PassThrough",
+                    "id": "3be9d894-e2a3-4db5-a1d6-e36fc9cc2c74",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "纳刀",
+                    "type": "PassThrough",
+                    "id": "15f91398-8bd5-4420-82bf-de5dad8c7aa2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "戳",
+                    "type": "PassThrough",
+                    "id": "28506d6a-c014-4e42-9d83-bdb40a223eae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "气刃斩",
+                    "type": "PassThrough",
+                    "id": "fcb3721a-a78d-4c41-a0fd-573d29647e31",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "看破斩",
+                    "type": "PassThrough",
+                    "id": "14213b05-a09a-430e-b8d8-14abb76168c4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "特殊纳刀",
+                    "type": "PassThrough",
+                    "id": "2d863847-06a6-4c7f-9d86-5e245ae0788a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "居合拔刀斩",
+                    "type": "PassThrough",
+                    "id": "2f4b7d0a-b82a-4973-bfe6-0a9eaff5e1b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "居合拔刀气刃斩",
+                    "type": "PassThrough",
+                    "id": "299ad7af-93b4-418d-a636-e592854084de",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "780fa5aa-1962-49d3-bf0e-16f351c663c3",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "戳",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15ed29f8-08ee-45e5-98d3-b2a19d5c8d3c",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "居合拔刀斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd820530-fb54-451b-9b70-24fe55c131f4",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "气刃斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eccb7fb2-ae15-448e-8851-7dfb076a01ac",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "居合拔刀气刃斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "908740fe-5d1b-43ef-9da2-8abae4c010a8",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "纳刀",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "975d78bc-db1e-4c54-8726-97b02b9d7fab",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "纳刀",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb27ac2d-8981-4192-85c2-3df2770cd739",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "翻滚",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4da73e2-812e-4a68-9a68-c9e0e18ce183",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "方向",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "One Modifier",
+                    "id": "eab977ac-b2db-4e27-b81c-c3da18ec0c4b",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "特殊纳刀",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "f5543fe9-3915-48f4-954f-6af140f98668",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "特殊纳刀",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "302eb077-d9c8-4706-a51a-c5469f82b0a7",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "特殊纳刀",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "One Modifier",
+                    "id": "a0ab45ef-ffa0-4b2c-abd5-66d97fe97d0e",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "看破斩",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "ab7758e8-68dd-47ff-900c-1c0b4e76fe37",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "看破斩",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "62160819-25e9-4e8b-a410-563f791cc3ab",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "看破斩",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "gamepad",
+            "bindingGroup": "gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

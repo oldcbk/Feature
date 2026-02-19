@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.InputSystem;
 
 public class KatanaHero : MonoBehaviour
 {
@@ -140,6 +141,80 @@ public class KatanaHero : MonoBehaviour
     }
 
     State m_ready;
+
+    public enum LogicalMove // 这里不体现优先级
+    {
+        空,
+        行走,
+        // --纳刀S--
+        奔跑,
+        纳刀翻滚M,
+        飞扑M,
+        拔刀M,
+        拔刀斩S,
+        // --拔刀S--
+        纳刀M,
+        拔刀翻滚M,
+        戳S,
+        气刃斩1S,
+        气刃斩2S,
+        气刃斩3S,
+        气刃斩4S,
+        看破斩S,
+        特殊纳刀S,
+        居合拔刀斩S,
+        居合拔刀气刃斩S
+    }
+    public record InputMovePair
+    {
+        public InputAction m_physicalInput;
+        public LogicalMove m_logicalMove;
+
+        public InputMovePair(InputAction physicalInput = null, LogicalMove logicalMove = 0)
+        {
+            m_physicalInput = physicalInput;
+            m_logicalMove = logicalMove;
+        }
+    }
+
+
+    public class 纳刀S : State
+    {
+        List<InputMovePair> m_inputMovePairs = new(7) {
+            new(null,LogicalMove.纳刀翻滚M),
+            new(null,LogicalMove.飞扑M),
+            new(null,LogicalMove.拔刀M),
+            new(null,LogicalMove.拔刀斩S),
+            new(null,LogicalMove.气刃斩1S),
+            new(null,LogicalMove.奔跑),
+            new(null,LogicalMove.行走),
+        };
+
+        public void GenBuffer(List<InputMovePair> inputMovePairs)
+        {
+
+        }
+
+        public class Buffer
+        {
+            List<InputMovePair> m_inputMovePairs;
+        }
+
+        void foo(LogicalMove logicalMove)
+        {
+
+        }
+
+        public void GenLogicalMove()
+        {
+
+        }
+
+        public 纳刀S(StateMachine stateMachine, string name) : base(stateMachine, name)
+        {
+        }
+    }
+
 
     public class Poke : State
     {

@@ -765,6 +765,59 @@ MonoBehaviour:
     = \u6B63\u5E38\u884C\u4E3A\n\u4F7F\u7528\u5355\u5411\u7FA4\u7EC4 + \u89D2\u8272\u80FD\u88AB\u5355\u5411\u5E73\u53F0\u5B8C\u5168\u906E\u4F4F
     = \u4E0B\u843D\u65F6\u906E\u4F4F,\u5BFC\u81F4\u80FD\u7AD9\u5728\u5E73\u53F0\u4E0B\u8FB9\u7F18\n\u4E0D\u4F7F\u7528\u5355\u5411\u7FA4\u7EC4
     = \u4E0B\u843D\u65F6\u6A2A\u5411\u906E\u4F4F\u4E00\u534A\u4EE5\u4E0A,\u80FD\u7AD9\u5728\u5E73\u53F0\u4E0B\u8FB9\u7F18(\u4E0D\u61C2\u4E3A\u4EC0\u4E48\u662F\u4E00\u534A,\u800C\u4E0D\u662F\u6709\u4EFB\u4F55\u63A5\u89E6\u5C31\u80FD\u7AD9)"
+--- !u!1 &1196636009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1196636011}
+  - component: {fileID: 1196636010}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1196636010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196636009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f70e770ba0fc8244b0383dba3c5f4c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputAction:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6fb0bb1c-911e-4e12-bd31-23edd9b48677
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+--- !u!4 &1196636011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196636009}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8184116, y: 1.759851, z: -0.04665808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289163230
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,8 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f587f009221f947bad7f5f4c203ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_operations:
-  - m_name: A
+  m_operations: []
 --- !u!4 &1289163232
 Transform:
   m_ObjectHideFlags: 0
@@ -1811,3 +1863,4 @@ SceneRoots:
   - {fileID: 1412620718}
   - {fileID: 688294940}
   - {fileID: 1289163232}
+  - {fileID: 1196636011}
