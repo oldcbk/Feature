@@ -451,24 +451,6 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""居合拔刀斩"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""2f4b7d0a-b82a-4973-bfe6-0a9eaff5e1b5"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""居合拔刀气刃斩"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""299ad7af-93b4-418d-a636-e592854084de"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -485,34 +467,12 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""15ed29f8-08ee-45e5-98d3-b2a19d5c8d3c"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";gamepad"",
-                    ""action"": ""居合拔刀斩"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""fd820530-fb54-451b-9b70-24fe55c131f4"",
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";gamepad"",
                     ""action"": ""气刃斩"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""eccb7fb2-ae15-448e-8851-7dfb076a01ac"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";gamepad"",
-                    ""action"": ""居合拔刀气刃斩"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -627,6 +587,74 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 }
             ]
+        },
+        {
+            ""name"": ""特殊纳刀S"",
+            ""id"": ""86aef78e-54d4-492d-abf9-0f607245c70e"",
+            ""actions"": [
+                {
+                    ""name"": ""翻滚"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""eb84a593-8368-4023-b687-2bb1b6c4a6ad"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""居合拔刀斩"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""337eb65a-43df-4463-aaea-2ddebcd3ae97"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""居合拔刀气刃斩"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""8ac7e3df-6e4a-4fde-8c40-57aaebe95595"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""57f4c5ab-25f4-45ff-9504-64db66bc7450"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";gamepad"",
+                    ""action"": ""翻滚"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b79cb645-153d-4780-ab33-f69f8f620b47"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";gamepad"",
+                    ""action"": ""居合拔刀斩"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eee54a21-ef53-4028-aa02-3c975f666fdc"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";gamepad"",
+                    ""action"": ""居合拔刀气刃斩"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -681,8 +709,11 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
         m_攻击S_气刃斩 = m_攻击S.FindAction("气刃斩", throwIfNotFound: true);
         m_攻击S_看破斩 = m_攻击S.FindAction("看破斩", throwIfNotFound: true);
         m_攻击S_特殊纳刀 = m_攻击S.FindAction("特殊纳刀", throwIfNotFound: true);
-        m_攻击S_居合拔刀斩 = m_攻击S.FindAction("居合拔刀斩", throwIfNotFound: true);
-        m_攻击S_居合拔刀气刃斩 = m_攻击S.FindAction("居合拔刀气刃斩", throwIfNotFound: true);
+        // 特殊纳刀S
+        m_特殊纳刀S = asset.FindActionMap("特殊纳刀S", throwIfNotFound: true);
+        m_特殊纳刀S_翻滚 = m_特殊纳刀S.FindAction("翻滚", throwIfNotFound: true);
+        m_特殊纳刀S_居合拔刀斩 = m_特殊纳刀S.FindAction("居合拔刀斩", throwIfNotFound: true);
+        m_特殊纳刀S_居合拔刀气刃斩 = m_特殊纳刀S.FindAction("居合拔刀气刃斩", throwIfNotFound: true);
     }
 
     ~@NewActions()
@@ -691,6 +722,7 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
         UnityEngine.Debug.Assert(!m_纳刀M.enabled, "This will cause a leak and performance issues, NewActions.纳刀M.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_拔刀S.enabled, "This will cause a leak and performance issues, NewActions.拔刀S.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_攻击S.enabled, "This will cause a leak and performance issues, NewActions.攻击S.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_特殊纳刀S.enabled, "This will cause a leak and performance issues, NewActions.特殊纳刀S.Disable() has not been called.");
     }
 
     /// <summary>
@@ -1160,8 +1192,6 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_攻击S_气刃斩;
     private readonly InputAction m_攻击S_看破斩;
     private readonly InputAction m_攻击S_特殊纳刀;
-    private readonly InputAction m_攻击S_居合拔刀斩;
-    private readonly InputAction m_攻击S_居合拔刀气刃斩;
     /// <summary>
     /// Provides access to input actions defined in input action map "攻击S".
     /// </summary>
@@ -1201,14 +1231,6 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "攻击S/特殊纳刀".
         /// </summary>
         public InputAction @特殊纳刀 => m_Wrapper.m_攻击S_特殊纳刀;
-        /// <summary>
-        /// Provides access to the underlying input action "攻击S/居合拔刀斩".
-        /// </summary>
-        public InputAction @居合拔刀斩 => m_Wrapper.m_攻击S_居合拔刀斩;
-        /// <summary>
-        /// Provides access to the underlying input action "攻击S/居合拔刀气刃斩".
-        /// </summary>
-        public InputAction @居合拔刀气刃斩 => m_Wrapper.m_攻击S_居合拔刀气刃斩;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1256,12 +1278,6 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
             @特殊纳刀.started += instance.On特殊纳刀;
             @特殊纳刀.performed += instance.On特殊纳刀;
             @特殊纳刀.canceled += instance.On特殊纳刀;
-            @居合拔刀斩.started += instance.On居合拔刀斩;
-            @居合拔刀斩.performed += instance.On居合拔刀斩;
-            @居合拔刀斩.canceled += instance.On居合拔刀斩;
-            @居合拔刀气刃斩.started += instance.On居合拔刀气刃斩;
-            @居合拔刀气刃斩.performed += instance.On居合拔刀气刃斩;
-            @居合拔刀气刃斩.canceled += instance.On居合拔刀气刃斩;
         }
 
         /// <summary>
@@ -1294,12 +1310,6 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
             @特殊纳刀.started -= instance.On特殊纳刀;
             @特殊纳刀.performed -= instance.On特殊纳刀;
             @特殊纳刀.canceled -= instance.On特殊纳刀;
-            @居合拔刀斩.started -= instance.On居合拔刀斩;
-            @居合拔刀斩.performed -= instance.On居合拔刀斩;
-            @居合拔刀斩.canceled -= instance.On居合拔刀斩;
-            @居合拔刀气刃斩.started -= instance.On居合拔刀气刃斩;
-            @居合拔刀气刃斩.performed -= instance.On居合拔刀气刃斩;
-            @居合拔刀气刃斩.canceled -= instance.On居合拔刀气刃斩;
         }
 
         /// <summary>
@@ -1333,6 +1343,124 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="攻击SActions" /> instance referencing this action map.
     /// </summary>
     public 攻击SActions @攻击S => new 攻击SActions(this);
+
+    // 特殊纳刀S
+    private readonly InputActionMap m_特殊纳刀S;
+    private List<I特殊纳刀SActions> m_特殊纳刀SActionsCallbackInterfaces = new List<I特殊纳刀SActions>();
+    private readonly InputAction m_特殊纳刀S_翻滚;
+    private readonly InputAction m_特殊纳刀S_居合拔刀斩;
+    private readonly InputAction m_特殊纳刀S_居合拔刀气刃斩;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "特殊纳刀S".
+    /// </summary>
+    public struct 特殊纳刀SActions
+    {
+        private @NewActions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public 特殊纳刀SActions(@NewActions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "特殊纳刀S/翻滚".
+        /// </summary>
+        public InputAction @翻滚 => m_Wrapper.m_特殊纳刀S_翻滚;
+        /// <summary>
+        /// Provides access to the underlying input action "特殊纳刀S/居合拔刀斩".
+        /// </summary>
+        public InputAction @居合拔刀斩 => m_Wrapper.m_特殊纳刀S_居合拔刀斩;
+        /// <summary>
+        /// Provides access to the underlying input action "特殊纳刀S/居合拔刀气刃斩".
+        /// </summary>
+        public InputAction @居合拔刀气刃斩 => m_Wrapper.m_特殊纳刀S_居合拔刀气刃斩;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_特殊纳刀S; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="特殊纳刀SActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(特殊纳刀SActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="特殊纳刀SActions" />
+        public void AddCallbacks(I特殊纳刀SActions instance)
+        {
+            if (instance == null || m_Wrapper.m_特殊纳刀SActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_特殊纳刀SActionsCallbackInterfaces.Add(instance);
+            @翻滚.started += instance.On翻滚;
+            @翻滚.performed += instance.On翻滚;
+            @翻滚.canceled += instance.On翻滚;
+            @居合拔刀斩.started += instance.On居合拔刀斩;
+            @居合拔刀斩.performed += instance.On居合拔刀斩;
+            @居合拔刀斩.canceled += instance.On居合拔刀斩;
+            @居合拔刀气刃斩.started += instance.On居合拔刀气刃斩;
+            @居合拔刀气刃斩.performed += instance.On居合拔刀气刃斩;
+            @居合拔刀气刃斩.canceled += instance.On居合拔刀气刃斩;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="特殊纳刀SActions" />
+        private void UnregisterCallbacks(I特殊纳刀SActions instance)
+        {
+            @翻滚.started -= instance.On翻滚;
+            @翻滚.performed -= instance.On翻滚;
+            @翻滚.canceled -= instance.On翻滚;
+            @居合拔刀斩.started -= instance.On居合拔刀斩;
+            @居合拔刀斩.performed -= instance.On居合拔刀斩;
+            @居合拔刀斩.canceled -= instance.On居合拔刀斩;
+            @居合拔刀气刃斩.started -= instance.On居合拔刀气刃斩;
+            @居合拔刀气刃斩.performed -= instance.On居合拔刀气刃斩;
+            @居合拔刀气刃斩.canceled -= instance.On居合拔刀气刃斩;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="特殊纳刀SActions.UnregisterCallbacks(I特殊纳刀SActions)" />.
+        /// </summary>
+        /// <seealso cref="特殊纳刀SActions.UnregisterCallbacks(I特殊纳刀SActions)" />
+        public void RemoveCallbacks(I特殊纳刀SActions instance)
+        {
+            if (m_Wrapper.m_特殊纳刀SActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="特殊纳刀SActions.AddCallbacks(I特殊纳刀SActions)" />
+        /// <seealso cref="特殊纳刀SActions.RemoveCallbacks(I特殊纳刀SActions)" />
+        /// <seealso cref="特殊纳刀SActions.UnregisterCallbacks(I特殊纳刀SActions)" />
+        public void SetCallbacks(I特殊纳刀SActions instance)
+        {
+            foreach (var item in m_Wrapper.m_特殊纳刀SActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_特殊纳刀SActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="特殊纳刀SActions" /> instance referencing this action map.
+    /// </summary>
+    public 特殊纳刀SActions @特殊纳刀S => new 特殊纳刀SActions(this);
     private int m_gamepadSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -1523,6 +1651,21 @@ public partial class @NewActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void On特殊纳刀(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "特殊纳刀S" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="特殊纳刀SActions.AddCallbacks(I特殊纳刀SActions)" />
+    /// <seealso cref="特殊纳刀SActions.RemoveCallbacks(I特殊纳刀SActions)" />
+    public interface I特殊纳刀SActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "翻滚" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void On翻滚(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "居合拔刀斩" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>

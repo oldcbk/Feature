@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2026-02-19T18:49:35.788Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="dr171JeLUJh2FWSEvmU5" version="24.5.3" type="device" pages="2">
+<mxfile host="Electron" modified="2026-02-20T15:30:33.735Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="_1x0TDcnOA7acwL0l1Yf" version="24.5.3" type="device" pages="2">
   <diagram name="第 1 页" id="wiRcrRXO7m_Uw9R6eSzW">
     <mxGraphModel dx="954" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,13 +110,7 @@
         <mxCell id="80nYgfHMpDEHy0VqLu03-24" value="被击倒S&lt;div&gt;0: 动作&lt;/div&gt;&lt;div&gt;1: 动作&lt;/div&gt;&lt;div&gt;LT+A - 地面受身M&lt;/div&gt;&lt;div&gt;2: - 纳/拔刀S&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="800" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="oRViyZQQvLtYQNud3Vvz-1" value="&lt;div&gt;逻辑输入:&lt;/div&gt;玩家的操作触发的&lt;span style=&quot;background-color: initial;&quot;&gt;状态间的转换&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;如: 纳刀S --&amp;gt; 拔刀S&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;包含先后的状态的信息&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;不包含&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;物理按键的信息&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="320" y="40" width="190" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="MpJIVgNr4c0ODaxvZp6D-1" value="RB&lt;div&gt;OnPush&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="50" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="MpJIVgNr4c0ODaxvZp6D-2" value="拔刀斩S&lt;div&gt;0: 动作&lt;/div&gt;&lt;div&gt;1: 维持动作&lt;/div&gt;&lt;div&gt;X/RB - 纳刀M&lt;/div&gt;&lt;div&gt;A - 拔刀翻滚M&lt;/div&gt;&lt;div&gt;Y - 戳S&lt;/div&gt;&lt;div&gt;RT - 气刃斩1S&lt;/div&gt;&lt;div&gt;RT+A - 特殊纳刀S&lt;/div&gt;&lt;div&gt;RT+X - 看破斩S&lt;/div&gt;&lt;div&gt;2: - 放松M&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="MpJIVgNr4c0ODaxvZp6D-2" value="拔刀斩S&lt;div&gt;0: 动作&lt;/div&gt;&lt;div&gt;1: 维持动作&lt;/div&gt;&lt;div&gt;X/RB - 纳刀M&lt;/div&gt;&lt;div&gt;A - 拔刀翻滚M&lt;/div&gt;&lt;div&gt;Y - 戳S&lt;/div&gt;&lt;div&gt;RT - 气刃斩1S&lt;/div&gt;&lt;div&gt;RT+A - 特殊纳刀S&lt;/div&gt;&lt;div&gt;RT+X - 看破斩S&lt;/div&gt;&lt;div&gt;2: - 放松M&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="400" width="120" height="160" as="geometry" />
         </mxCell>
       </root>

@@ -365,24 +365,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "居合拔刀斩",
-                    "type": "PassThrough",
-                    "id": "2f4b7d0a-b82a-4973-bfe6-0a9eaff5e1b5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "居合拔刀气刃斩",
-                    "type": "PassThrough",
-                    "id": "299ad7af-93b4-418d-a636-e592854084de",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -399,34 +381,12 @@
                 },
                 {
                     "name": "",
-                    "id": "15ed29f8-08ee-45e5-98d3-b2a19d5c8d3c",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";gamepad",
-                    "action": "居合拔刀斩",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "fd820530-fb54-451b-9b70-24fe55c131f4",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": ";gamepad",
                     "action": "气刃斩",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "eccb7fb2-ae15-448e-8851-7dfb076a01ac",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";gamepad",
-                    "action": "居合拔刀气刃斩",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -539,6 +499,74 @@
                     "action": "看破斩",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "特殊纳刀S",
+            "id": "86aef78e-54d4-492d-abf9-0f607245c70e",
+            "actions": [
+                {
+                    "name": "翻滚",
+                    "type": "PassThrough",
+                    "id": "eb84a593-8368-4023-b687-2bb1b6c4a6ad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "居合拔刀斩",
+                    "type": "PassThrough",
+                    "id": "337eb65a-43df-4463-aaea-2ddebcd3ae97",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "居合拔刀气刃斩",
+                    "type": "PassThrough",
+                    "id": "8ac7e3df-6e4a-4fde-8c40-57aaebe95595",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "57f4c5ab-25f4-45ff-9504-64db66bc7450",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "翻滚",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b79cb645-153d-4780-ab33-f69f8f620b47",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "居合拔刀斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eee54a21-ef53-4028-aa02-3c975f666fdc",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";gamepad",
+                    "action": "居合拔刀气刃斩",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
